@@ -607,6 +607,45 @@ footer p {
   object-fit: cover;
 }
 
+
+/* git */
+.git-container {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+.git-container ul {
+  list-style-type: none;
+  border-radius: 10px;
+  border: 1px solid grey;
+  overflow: hidden;
+}
+
+.git-container ul li code {
+  background-color: grey;
+  padding: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.git-container ul li {
+  color: #000;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+  font-size: 2rem;
+  border-bottom: 1px solid grey;
+  padding: 20px;
+}
+
+.git-container ul li:nth-child(odd) {
+  background-color: azure;
+}
+
 /* mediaqueries */
 
 /* desktop first */
