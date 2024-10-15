@@ -1,0 +1,43 @@
+/* nav */
+header {
+  background: $secondary-color;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+nav {
+  height: 80px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-link {
+  color: $primary-color;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 10px;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  border: 1px solid $primary-color;
+  border-radius: 10px;
+}
+
+.nav-list:hover .nav-link:not(:hover) {
+  filter: blur(4px);
+}

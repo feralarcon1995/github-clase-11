@@ -1,0 +1,48 @@
+// @for $variable from 1 to 6 {
+//   .p-#{$variable} {
+//     padding: $variable * 10px;
+//   }
+
+//   .m-#{$variable} {
+//     margin: $variable * 5px;
+//   }
+
+//   .w-#{$variable} {
+//     width: $variable * 10vw;
+//   }
+// }
+
+// @for $variable-2 from 1 through 10 {
+//   .col-#{$variable-2} {
+//     width: 100% / 10 * $variable-2;
+//   }
+// }
+
+//extend
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+//mixin sin parametros
+@mixin flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+//mixin con parametros
+@mixin d-flex($direction, $justify, $align, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin imagenes($width, $height, $object) {
+  width: $width;
+  height: $height;
+  object-fit: $object;
+}

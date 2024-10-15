@@ -1,0 +1,99 @@
+$primary-color: #033113;
+$primary-color-light: #03311350;
+$secondary-color: #c7ffba;
+$main-font: "Bebas Neue", sans-serif;
+
+$temporada: invierno;
+
+@if $temporada == invierno {
+  $primary-color: #071c5b;
+  $primary-color-light: #071c5b4e;
+  $secondary-color: #e7e8ff;
+} @else if $temporada == verano {
+  $primary-color: #9f0b0b;
+  $primary-color-light: #9f0b0b52;
+  $secondary-color: #fdd39c;
+} @else {
+  $primary-color: #033113;
+  $primary-color-light: #03311349;
+  $secondary-color: #c7ffba;
+}
+
+// $colores: (
+//   primary: rgb(6, 6, 173),
+//   secondary: rgb(156, 22, 156),
+//   danger: rgb(174, 25, 25),
+//   warning: rgb(221, 96, 0),
+//   dark: #000000,
+//   light: #ffffff,
+//   success: #055505
+// );
+
+// .button-container {
+//   min-height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 1rem;
+
+//   a {
+//     text-decoration: none;
+//   }
+// }
+
+// @each $key, $valor in $colores {
+//   .btn-#{$key} {
+//     background: $valor;
+//     padding: 10px;
+//     width: 150px;
+//     text-align: center;
+//     color: #fff;
+//     font-weight: bold;
+//     transition: 0.3s;
+//     border: 2px solid transparent;
+
+//     @if $key == light {
+//       color: #000;
+//       &:hover {
+//         background: darken($valor, 30%);
+//         border-color: lighten($valor, 30%);
+//         color: $valor;
+//         box-shadow: 0px 0px 10px 0px darken($valor, 30%);
+//       }
+//     } @else {
+//       &:hover {
+//         background: lighten($valor, 25%);
+//         border-color: darken($valor, 25%);
+//         color: darken($valor, 30%);
+//         box-shadow: 0px 0px 15px 0px lighten($valor, 10%);
+//       }
+//     }
+//   }
+// }
+
+// @each $key, $valor in $colores {
+//   .btn-#{$key}-outlined {
+//     padding: 10px;
+//     width: 150px;
+//     text-align: center;
+//     color: $valor;
+//     font-weight: bold;
+//     transition: 0.3s;
+//     border: 2px solid $valor;
+
+//     @if $key == light {
+//       color: #000;
+//       &:hover {
+//         background: darken($valor, 30%);
+//         box-shadow: 0px 0px 10px 0px darken($valor, 30%);
+//       }
+//     } @else {
+//       &:hover {
+//         background: lighten($valor, 25%);
+//         border-color: darken($valor, 25%);
+//         color: darken($valor, 30%);
+//         box-shadow: 0px 0px 15px 0px lighten($valor, 10%);
+//       }
+//     }
+//   }
+// }
