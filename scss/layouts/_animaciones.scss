@@ -135,8 +135,9 @@
     object-fit: cover;
   }
 }
-.slider.reverse > .slider-list > .slider-item {
+.slider.reverse .slider-item {
   animation: auto-slider-reverse 15s linear infinite;
+  animation-delay: calc((15s / var(--quantity)) * (var(--position) - 1));
 }
 
 @keyframes auto-slider {
